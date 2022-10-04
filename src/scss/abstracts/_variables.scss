@@ -1,73 +1,94 @@
+//  =============================
+//  VARIABLES
+//  =============================
+
 // COLOR
-// ----------------------------------------
+// ------------------------------
 //
 $color: (
 	primary: (
-		1: hsl(250, 100%, 50%)
+		1: rgba(30, 144, 254, 1)
  	),
-  accent: (
-    1: hsl(0, 100%, 50%)
-  ),
   neutral: (
-    1: hsl(0, 0%, 0%),
-		2: hsl(0, 0%, 100%)
+    1: rgba(1, 11, 19, 1),
+		2: rgba(255, 255, 255, 1),
+    3: rgb(236, 236, 236),
   )
 );
-
-
 
 // FONT-FAMILY
-// ----------------------------------------
+// ------------------------------
 //
 $font-family: (
-	heading:    '"Arial", sans-serif',  // H1 - H6
-  subheading: '"Arial", sans-serif',  // .subheading
-  body:       '"Arial", sans-serif' , // .features-text, etc.
-  button:     '"Arial", sans-serif'   // .btn
+	heading:    '"Inter", sans-serif',  // H1 - H6
+  subheading: '"Inter", sans-serif',  // .subheading
+  body:       '"Inter", sans-serif' , // p, .features-text, etc.
+  button:     '"Inter", sans-serif'   // .btn
 );
 
-// FONT-SIZES
-// ----------------------------------------
+// FONT-SIZE, LINE-HEIGHT
+// ------------------------------
 //
 $font-sizes: (
-  desktop: (
-    h1:   ( 4.5rem, 5.125rem, 0 ),  // H1
-    h2:   ( 3.25rem, 3.875rem, 0 ), // H2
-    h3:   ( 2.25rem, 2.75rem, 0 ),  // H3
-    h4:   ( 1.5rem, 2rem, 0 ),      // H4
-    h5:   ( 1.25rem, 1.75rem, 0 ),  // H5
-    h6:   ( 1rem, 1.5rem, 0 ),      // H6
-    t-s:  ( .875rem, 1.25rem, 0 ),  // Text Small
-    t-r:  ( 1rem, 1.5rem, 0 ),      // Text Regular
-    t-l:  ( 1.25rem, 2rem, 0 )      // Text Large
-  ),
-  mobile: (
-    h1:   ( 4.5rem, 5.125rem, 0 ),  // H1
-    h2:   ( 3.25rem, 3.875rem, 0 ), // H2
-    h3:   ( 2.25rem, 2.75rem, 0 ),  // H3
-    h4:   ( 1.5rem, 2rem, 0 ),      // H4
-    h5:   ( 1.25rem, 1.75rem, 0 ),  // H5
-    h6:   ( 1rem, 1.5rem, 0 ),      // H6
-    t-s:  ( .875rem, 1.25rem, 0 ),  // Text Small
-    t-r:  ( 1rem, 1.5rem, 0 ),      // Text Regular
-    t-l:  ( 1.25rem, 2rem, 0 )      // Text Large
-  )
+  h1:   ( 3.75rem, 4.75rem),  // H1
+  h2:   ( 2.25rem, 3.25rem),  // H2
+  h3:   ( 1.75rem, 2.75rem),  // H3
+  h4:   ( 1.5rem, 2.25rem),   // H4
+  h5:   ( 1.25rem, 1.75rem),  // H5
+  h6:   ( 1rem, 1.5rem),      // H6
+  t-s:  ( .875rem, 1.25rem),  // Text Small
+  t-r:  ( 1rem, 1.5rem),      // Text Regular
+  t-l:  ( 1.125, 1.875rem)    // Text Large
 );
 
 // FONT-WEIGHT
-// ----------------------------------------
+// ------------------------------
 //
 $font-weight: (
-  regular: 400,
-  bold:    700
+  regular:  400,
+  medium:   500,
 );
 
+// SHADOW
+// ------------------------------
+//
+$shadows: (
+  button: (
+    default:  '0px 10px 24px 2px rgba(30, 144, 254, 0.2)',
+    hover:    '0px 10px 40px 2px rgba(30, 144, 254, 0.4)',
+  ),
 
+  card: (
+    hover:  '0px 8px 20px rgba(181, 198, 224, 0.24)'
+  )
+);
 
-// TRANSITIONS
-// ----------------------------------------
+// TRANSITION
+// ------------------------------
 //
 $transition: (
   text:   'color 200ms ease',
   button: 'all 400ms ease'
-)
+);
+
+// BREAKPOINTS MIN
+// ------------------------------
+//
+$breakpoints-up: (
+  mobile:       "320px",
+  tablet:       "768px",
+  tablet-wide:  "1024px",
+  desktop:      "1366px",
+  desktop-wide: "1720px"
+);
+
+// BREAKPOINTS MAX
+// ------------------------------
+//
+$breakpoints-down: (
+  desktop-wide: "1920px",
+  desktop:      "1719px",
+  tablet-wide:  "1365px",
+  tablet:       "1023px",
+  mobile:       "767px"
+);
